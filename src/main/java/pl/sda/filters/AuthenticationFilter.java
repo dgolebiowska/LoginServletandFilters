@@ -8,7 +8,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebFilter(urlPatterns = "/Admin.jsp")
+@WebFilter(urlPatterns = "/admin.jsp")
 public class AuthenticationFilter implements Filter {
     public void destroy() {
     }
@@ -20,7 +20,7 @@ public class AuthenticationFilter implements Filter {
             chain.doFilter(req, resp);
         } else {
 
-           servletRequest.getRequestDispatcher("Login.jsp").forward(req, resp);
+           servletRequest.getRequestDispatcher("login.jsp").forward(req, resp);
         }
     }
     public void init(FilterConfig config) throws ServletException {

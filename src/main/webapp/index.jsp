@@ -11,10 +11,10 @@
 <%--<button type="button" formaction="/LogoutServlet" class="btn btn-success">Logout</button>--%>
 <%--</div>--%>
 <div class="container">
-    <a href="Login.jsp">
+    <a href="login.jsp">
         <button type="button" class="btn btn-primary">Login</button>
     </a>
-    <a href="Admin.jsp">
+    <a href="admin.jsp">
         <button type="button" class="btn btn-secondary">Admin</button>
     </a>
     <a href="/LogoutServlet">
